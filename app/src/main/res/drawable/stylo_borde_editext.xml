@@ -3,18 +3,19 @@
 
 </shape>
 
-<stroke
-    android:width="1sp"
-    android:color="@color_silver">
-</stroke>
+    <!--<stroke
+        android:width="1sp"
+        android:color="@color_silver">
+    </stroke>
 
-<padding
-    android:bottom="10sp"
-    android:left="10sp"
-    android:right="10sp"
-    android:top="10sp">
-</padding>
+    <padding
+        android:bottom="10sp"
+        android:left="10sp"
+        android:right="10sp"
+        android:top="10sp">
+    </padding>
 
-<corners
-    android:radius="10dp">
-</corners>
+    <corners
+        android:radius="10dp">
+    </corners>-->
+
