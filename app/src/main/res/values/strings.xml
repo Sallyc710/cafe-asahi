@@ -1,3 +1,4 @@
 <resources>
     <string name="app_name">Cafeasahi</string>
+    <string name="recuperar"><u>Recuperar Contraseña</u></string>
 </resources>

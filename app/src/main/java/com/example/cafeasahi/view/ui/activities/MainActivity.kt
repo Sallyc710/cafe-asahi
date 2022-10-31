@@ -29,6 +29,7 @@ class MainActivity : AppCompatActivity() {
                 finish()
             }, 4000)
 
+
     }
 }
 
