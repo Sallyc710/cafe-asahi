@@ -29,7 +29,8 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="20dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="316dp"
+        android:layout_marginBottom="280dp"
+        android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Nombre Completo"
@@ -46,10 +47,13 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
+        android:layout_marginBottom="40dp"
+        android:background="@drawable/stylo_borde_editext"
         android:text="Button"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:layout_editor_absoluteY="596dp" />
+        app:layout_constraintHorizontal_bias="0.495"
+        app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
         android:id="@+id/editTextTextPersonName4"
@@ -58,15 +62,17 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="225dp"
+        android:layout_marginBottom="200dp"
+        android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Contraseña"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintVertical_bias="1.0" />
 
     <EditText
         android:id="@+id/editTextTextPersonName5"
@@ -75,24 +81,26 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="280dp"
+        android:layout_marginBottom="260dp"
+        android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Correo electrónico"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.507"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName3"
-        android:background="@drawable/stylo_borde_editext"/>
+        app:layout_constraintVertical_bias="1.0" />
 
     <TextView
         android:id="@+id/textView2"
-        android:layout_width="202dp"
-        android:layout_height="34dp"
+        android:layout_width="217dp"
+        android:layout_height="51dp"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="396dp"
+        android:layout_marginBottom="380dp"
+        android:background="@drawable/stylo_borde_editext"
         android:fontFamily="@font/opensanslight"
         android:gravity="center"
         android:text="REGISTRO"
@@ -101,7 +109,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.291"
+        app:layout_constraintHorizontal_bias="0.285"
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
@@ -111,13 +119,15 @@
         android:layout_marginStart="100dp"
         android:layout_marginTop="18dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="148dp"
+        android:layout_marginBottom="140dp"
+        android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Fecha de Nacimiento"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.427"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintVertical_bias="1.0" />
 </androidx.constraintlayout.widget.ConstraintLayout>
