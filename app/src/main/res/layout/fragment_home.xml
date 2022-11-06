@@ -56,7 +56,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/coffe"
+                            android:src="@drawable/caffe2"
                             android:id="@+id/cardCafe">
                         </ImageView>
                         <TextView

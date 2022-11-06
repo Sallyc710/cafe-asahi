@@ -28,9 +28,9 @@ class ProducAdapter:RecyclerView.Adapter<ProducAdapter.ViewHolder>() {
 
         }
     }
-    val titles= arrayOf( "Mompos","Bahareque", "Cafi Costa", "Comuneros", "Pueblo" )
-    val precio= arrayOf( "$17.000","$18.000", "$16.500", "$19.000", "$97.000" )
-    val image= arrayOf( R.drawable.mompo,R.drawable.bahareque,R.drawable.Caficosta,R.drawable.Comuneros,R.drawable.Pueblo )
+    val titles= arrayOf( "Mompos","Bahareque", "Cafi Costa", "Comuneros", "Pueblo","Cafe Jordan","Cafe Miraza","Cafe Quindio" )
+    val precio= arrayOf( "$17.000","$18.000", "$16.500", "$19.000", "$97.000","$20.000","$19.500","$18.500" )
+    val image= arrayOf( R.drawable.mompo,R.drawable.bahareque,R.drawable.caficosta,R.drawable.comuneros,R.drawable.pueblo,R.drawable.jordan,R.drawable.miraza,R.drawable.quindio )
 
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {

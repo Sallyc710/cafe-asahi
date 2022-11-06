@@ -36,7 +36,9 @@ class ProducFragment : Fragment() {
             when(it.itemId){
                 R.id.home -> findNavController().navigate(R.id.action_producFragment_to_homeFragment)
                 R.id.perfil -> findNavController().navigate(R.id.action_producFragment_to_perfilFragment)
-                R.id.mapa -> findNavController().navigate(R.id.action_homeFragment_to_mapaFragment)
+                R.id.mapa -> findNavController().navigate(R.id.action_producFragment_to_mapaFragment)
+                R.id.carrito -> findNavController().navigate(R.id.action_producFragment_to_compraFragment)
+                R.id.favorit -> findNavController().navigate(R.id.action_producFragment_to_favoritosFragment)
             }
         }
     }

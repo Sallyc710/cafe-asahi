@@ -48,12 +48,34 @@
         <action
             android:id="@+id/action_producFragment_to_perfilFragment"
             app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_producFragment_to_compraFragment"
+            app:destination="@id/compraFragment" />
+        <action
+            android:id="@+id/action_producFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.example.cafeasahi.view.ui.fragments.PerfilFragment"
         android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_producFragment"
+            app:destination="@id/producFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_compraFragment"
+            app:destination="@id/compraFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_ayudaFragment"
+            app:destination="@id/ayudaFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapaFragment"
         android:name="com.example.cafeasahi.view.ui.fragments.MapaFragment"
