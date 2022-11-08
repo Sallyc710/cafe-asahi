@@ -10,13 +10,23 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cafeasahi.R
 
 class ProducAdapter:RecyclerView.Adapter<ProducAdapter.ViewHolder>() {
+    private lateinit var mListener: onItemClickListener
+    interface onItemClickListener{
+        fun onItemClick(position: Int)
+    }
+
+    fun setOnItemClickListener(listener: onItemClickListener){
+        mListener = listener
+    }
 
   override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int):ViewHolder{
       val v=LayoutInflater.from(viewGroup.context).inflate(R.layout.card_view_produc,
           viewGroup, false)
-      return ViewHolder(v)
+      return ViewHolder(v, mListener)
   }
-    inner class ViewHolder(ItemView: View): RecyclerView.ViewHolder(ItemView){
+
+
+    inner class ViewHolder(ItemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(ItemView){
         var itemImage: ImageView
         var itemTitle: TextView
         var itemprecio: TextView
@@ -26,6 +36,9 @@ class ProducAdapter:RecyclerView.Adapter<ProducAdapter.ViewHolder>() {
             itemTitle=ItemView.findViewById(R.id.title)
             itemprecio=ItemView.findViewById(R.id.precio)
 
+            itemView.setOnClickListener {
+                listener.onItemClick(adapterPosition)
+            }
         }
     }
     val titles= arrayOf( "Mompos","Bahareque", "Cafi Costa", "Comuneros", "Pueblo","Cafe Jordan","Cafe Miraza","Cafe Quindio" )
@@ -34,11 +47,13 @@ class ProducAdapter:RecyclerView.Adapter<ProducAdapter.ViewHolder>() {
 
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i: Int) {
+
+
         viewHolder.itemTitle.text=titles[i]
         viewHolder.itemprecio.text=precio[i]
         viewHolder.itemImage.setImageResource(image[i])
 
-    }
+            }
 
     override fun getItemCount(): Int {
         return titles.size

@@ -11,6 +11,8 @@ import androidx.recyclerview.widget.RecyclerView
 import com.example.cafeasahi.R
 import com.example.cafeasahi.view.adapter.ProducAdapter
 import com.google.android.material.bottomnavigation.BottomNavigationView
+import android.widget.Toast
+
 
 
 class ProducFragment : Fragment() {
@@ -20,11 +22,27 @@ class ProducFragment : Fragment() {
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
     ): View? {
+
         val view= inflater.inflate(R.layout.fragment_produc, container, false)
         recyclerLib=view.findViewById(R.id.recyclerview)
         val adapter=ProducAdapter()
         recyclerLib.layoutManager=LinearLayoutManager(context)
         recyclerLib.adapter=adapter
+
+        adapter.setOnItemClickListener(object:ProducAdapter.onItemClickListener{
+            override fun onItemClick(position: Int) {
+
+                when(position){
+                    0 -> findNavController().navigate(R.id.action_producFragment_to_detalleFragment)
+                }
+
+
+
+            }
+
+
+        })
+
         return view
     }
 

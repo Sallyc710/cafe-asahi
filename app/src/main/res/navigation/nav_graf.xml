@@ -54,6 +54,9 @@
         <action
             android:id="@+id/action_producFragment_to_favoritosFragment"
             app:destination="@id/favoritosFragment" />
+        <action
+            android:id="@+id/action_producFragment_to_detalleFragment"
+            app:destination="@id/detalleFragment" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
@@ -91,4 +94,13 @@
         android:name="com.example.cafeasahi.view.ui.fragments.FavoritosFragment"
         android:label="fragment_favoritos"
         tools:layout="@layout/fragment_favoritos" />
+    <fragment
+        android:id="@+id/detalleFragment"
+        android:name="com.example.cafeasahi.view.ui.fragments.DetalleFragment"
+        android:label="fragment_detalle"
+        tools:layout="@layout/fragment_detalle" >
+        <action
+            android:id="@+id/action_detalleFragment_to_producFragment"
+            app:destination="@id/producFragment" />
+    </fragment>
 </navigation>
