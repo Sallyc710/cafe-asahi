@@ -16,7 +16,8 @@
         android:layout_marginStart="50dp"
         android:layout_marginTop="30dp"
         android:layout_marginEnd="49dp"
-        app:srcCompat="@drawable/logoslogan2" />
+        app:srcCompat="@drawable/logoslogan2"
+        android:contentDescription="TODO" />
 
     <TextView
         android:id="@+id/textView2"
@@ -33,7 +34,9 @@
         android:text="RECUPERAR CONTRASEÑA"
         android:textColor="@color/colorsecundario"
         android:textSize="18sp"
-        android:textStyle="bold"></TextView>
+        android:textStyle="bold">
+
+    </TextView>
 
     <EditText
         android:id="@+id/correoRec"
@@ -50,23 +53,10 @@
         android:ems="10"
         android:hint="Correo Electrónico"
         android:autofillHints="emailAddress"
-        android:inputType="textPersonName"></EditText>
+        android:inputType="textPersonName">
 
-    <EditText
-        android:id="@+id/nuevaclave"
-        android:layout_width="wrap_content"
-        android:layout_height="40dp"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_marginStart="101dp"
-        android:layout_marginTop="18dp"
-        android:layout_marginEnd="100dp"
-        android:layout_marginBottom="198dp"
-        android:background="@drawable/stylo_borde_editext"
-        android:ems="10"
-        android:hint="Nueva Contraseña"
-        android:inputType="textPersonName"></EditText>
+    </EditText>
+
 
     <Button
         android:id="@+id/buttonRec"
@@ -79,6 +69,8 @@
         android:layout_marginEnd="100dp"
         android:layout_marginBottom="121dp"
         android:background="@drawable/stylo_borde_editext"
-        android:text="Recuperar"></Button>
+        android:text="Recuperar">
+
+    </Button>
 
 </RelativeLayout>

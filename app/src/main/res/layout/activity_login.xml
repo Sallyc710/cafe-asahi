@@ -23,7 +23,7 @@
         app:srcCompat="@drawable/logoslogan2" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName"
+        android:id="@+id/correologin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -34,12 +34,12 @@
         android:layout_marginBottom="316dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:hint="Email"
+        android:hint="Correo Electronico"
         android:fontFamily="@font/opensanslight"
         android:background="@drawable/stylo_borde_editext"/>
 
     <EditText
-        android:id="@+id/editTextTextPersonName2"
+        android:id="@+id/contrasenalogin"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentStart="true"
@@ -51,7 +51,7 @@
         android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:fontFamily="@font/opensanslight"
-        android:inputType="textPersonName"
+        android:inputType="textPassword"
         android:hint="Contraseña" />
 
     <Button

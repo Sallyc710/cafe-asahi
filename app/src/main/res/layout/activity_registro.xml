@@ -33,7 +33,7 @@
         android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nombre Completo"
+        android:hint="Nombre Completo"
         android:autofillHints="name"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -43,7 +43,7 @@
         app:layout_constraintVertical_bias="0.621" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/registar"
         android:layout_width="240dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -57,7 +57,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName4"
+        android:id="@+id/contrasenaregistro"
         android:layout_width="240dp"
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
@@ -66,18 +66,18 @@
         android:layout_marginBottom="200dp"
         android:background="@drawable/stylo_borde_editext"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Contraseña"
+        android:inputType="textPassword"
+        android:hint="Contraseña"
         android:autofillHints="password"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName5"
+        app:layout_constraintTop_toBottomOf="@+id/correoregistro"
         app:layout_constraintVertical_bias="0.0" />
 
     <EditText
-        android:id="@+id/editTextTextPersonName5"
+        android:id="@+id/correoregistro"
         android:layout_width="240dp"
         android:layout_height="50dp"
         android:layout_marginStart="100dp"
@@ -86,8 +86,8 @@
         android:layout_marginBottom="260dp"
         android:background="@drawable/stylo_borde_editext"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Correo electrónico"
+        android:inputType="textEmailAddress"
+        android:hint="Correo electrónico"
         android:autofillHints="emailAddress"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
@@ -125,11 +125,11 @@
         android:background="@drawable/stylo_borde_editext"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Fecha de Nacimiento"
+        android:hint="Fecha de Nacimiento"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.517"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName4"
+        app:layout_constraintTop_toBottomOf="@+id/contrasenaregistro"
         app:layout_constraintVertical_bias="0.104" />
 </androidx.constraintlayout.widget.ConstraintLayout>
