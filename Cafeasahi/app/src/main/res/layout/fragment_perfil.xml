@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.ui.fragments.PerfilFragment">
+
+    <ImageView
+        android:id="@+id/fotoperfil"
+        android:layout_width="match_parent"
+        android:layout_height="268dp"
+        android:src="@drawable/camara">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btmcamara"
+        android:layout_width="169dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="35dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/colorsecundario"
+        android:text="Camara"
+        android:textStyle="bold">
+    </Button>
+    <Button
+        android:id="@+id/btmgaleria"
+        android:layout_width="169dp"
+        android:layout_height="72dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/coloracento"
+        android:text="Galeria"
+        android:textStyle="bold">
+    </Button>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/hello_blank_fragment" />
+
+</FrameLayout>
