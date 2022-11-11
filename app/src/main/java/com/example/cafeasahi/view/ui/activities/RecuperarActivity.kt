@@ -1,6 +1,6 @@
 package com.example.cafeasahi.view.ui.activities
 
-import android.annotation.SuppressLint
+
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
@@ -23,7 +23,7 @@ class RecuperarActivity : AppCompatActivity() {
         firebaseAuth= Firebase.auth
         recuperarboton=findViewById(R.id.buttonRec)
         val correo=findViewById<EditText>(R.id.correoRec)
-        val contrasena=findViewById<EditText>(R.id.nuevaclave)
+
         recuperarboton.setOnClickListener {
             cambiocontrasena(correo.text.toString())
         }

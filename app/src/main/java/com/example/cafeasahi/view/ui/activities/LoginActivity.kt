@@ -34,11 +34,12 @@ class LoginActivity : AppCompatActivity() {
         val contrasena=findViewById<EditText>(R.id.contrasenalogin)
 
         iniciobutton.setOnClickListener{
-            startActivity(Intent(this, HomeActivity::class.java))
+            login(correo.text.toString(),contrasena.text.toString())
         }
 
         registrobutton.setOnClickListener {
-            login(correo.text.toString(),contrasena.text.toString())
+
+            startActivity(Intent(this, RegistroActivity::class.java))
         }
 
         recuperarbutton.setOnClickListener {
