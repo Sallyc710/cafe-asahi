@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "373361579928",
+    "project_id": "cafeasahi-e84a9",
+    "storage_bucket": "cafeasahi-e84a9.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:373361579928:android:e98d20bfea9944566e7ded",
+        "android_client_info": {
+          "package_name": "com.example.cafeasahi"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "373361579928-llf06kdt5p5clftq9v29qu6irg1qspqo.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCb3XPQbkiUuzfuHmYGIuNnB8EN1btMzSM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "373361579928-llf06kdt5p5clftq9v29qu6irg1qspqo.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
