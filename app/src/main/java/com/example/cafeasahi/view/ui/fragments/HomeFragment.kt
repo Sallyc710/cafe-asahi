@@ -53,11 +53,6 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_perfilFragment)
             }
 
-        val cardMa = view.findViewById<ImageView>(R.id.cardMap)
-        cardMa.setOnClickListener {
-            findNavController().navigate(R.id.action_homeFragment_to_mapaFragment)
-            }
-
         val cardHel = view.findViewById<ImageView>(R.id.cardHelp)
         cardHel.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_ayudaFragment)

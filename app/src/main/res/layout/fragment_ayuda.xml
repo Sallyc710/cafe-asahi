@@ -8,9 +8,14 @@
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Ayuda" />
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="CONTACTO"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorsecundario"
+        android:textStyle="bold" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"
