@@ -3,12 +3,29 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ui.fragments.MapaFragment">
 
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Mapa" />
+        android:layout_height="39dp"
+        android:gravity="center"
+        android:text="MAPA"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorsecundario"
+        android:textStyle="bold" />
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttonnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorfondo"
+        app:menu="@menu/menu_nav_bar2">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </FrameLayout>

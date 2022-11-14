@@ -10,9 +10,20 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import androidx.navigation.fragment.findNavController
 import com.example.cafeasahi.R
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
 class HomeFragment : Fragment() {
+    lateinit var firebaseAuth: FirebaseAuth
+
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        firebaseAuth= Firebase.auth
+    }
+
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -56,6 +67,14 @@ class HomeFragment : Fragment() {
         cardFav.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_favoritosFragment)
         }
+
+        val cardSalir = view.findViewById<ImageView>(R.id.cardSalir)
+        cardSalir.setOnClickListener {
+            firebaseAuth.signOut()
+            findNavController().navigate(R.id.action_homeFragment_to_loginActivity)
+            true
+        }
+
     }
 
 

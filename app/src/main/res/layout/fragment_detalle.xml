@@ -3,41 +3,47 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".view.ui.fragments.DetalleFragment">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragments.DetalleFragment"
+    android:background="@drawable/theme_gradients_background">
+
 
     <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tituloDetalle"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
 
     <ImageView
         android:id="@+id/imaDetalle"
         android:layout_width="250dp"
         android:layout_height="250dp"
         android:layout_marginLeft="75dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/bahareque"
          />
 
-    <EditText
+    <TextView
         android:id="@+id/textDetalle"
-        android:layout_width="380dp"
-        android:layout_height="250dp"
-        android:ems="10"
-        android:layout_marginLeft="15dp"
-        android:layout_marginTop="300dp"
-        android:inputType="textMultiLine" />
+        android:layout_width="324dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="320dp"
+        android:text="https://docs.google.com/spreadsheets/u/0/d/1oU9woWlF5rRrKlHBk19C0ilRBf4I9zJ9xO7P09aTzh8/htmlview"
+        android:textSize="16dp" />
 
-    <CheckedTextView
-        android:id="@+id/checkedTextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="600dp"
-        android:layout_marginLeft="25dp"
-        android:text="CheckedTextView" />
 
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="650dp"
-        android:layout_marginLeft="110dp"
-        android:text="Agregar al Carrito" />
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttonnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#00FFFFFF"
+        app:menu="@menu/menu_nav_bar2">
 
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 </FrameLayout>

@@ -30,9 +30,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="97dp"
-        android:layout_marginEnd="103dp"
-        android:layout_marginBottom="226dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="180dp"
         android:background="@drawable/stylo_borde_button"
         android:fontFamily="@font/opensanslight"
         android:text="Inicio"
@@ -48,9 +48,9 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="96dp"
-        android:layout_marginEnd="104dp"
-        android:layout_marginBottom="157dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="110dp"
         android:background="@drawable/stylo_borde_button"
         android:fontFamily="@font/opensanslight"
         android:text="Registro"
@@ -67,7 +67,7 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="125dp"
+        android:layout_marginBottom="61dp"
         android:fontFamily="@font/opensanslight"
         android:gravity="center"
         android:text="@string/recuperar"
@@ -75,34 +75,40 @@
         android:textStyle="bold" />
 
     <com.google.android.material.textfield.TextInputLayout
-        android:layout_width="301dp"
-        android:layout_height="60dp"
+        android:layout_width="300dp"
+        android:layout_height="70dp"
         android:layout_marginLeft="50dp"
-        android:layout_marginTop="390dp"
-        app:endIconMode="password_toggle">
+        android:layout_marginTop="320dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox">
 
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/correologin"
+            android:layout_width="300dp"
+            android:layout_height="60dp"
+
+            android:cursorVisible="true"
+            android:hint="Correo Electrónico"
+            android:inputType="" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="300dp"
+        android:layout_height="70dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginTop="410dp"
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        app:endIconMode="password_toggle">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/contrasenalogin"
             android:layout_width="300dp"
             android:layout_height="60dp"
-            android:background="@drawable/stylo_borde_editext"
             android:cursorVisible="true"
             android:hint="Contraseña"
-
             android:inputType="textPassword" />
     </com.google.android.material.textfield.TextInputLayout>
 
-    <EditText
-        android:id="@+id/correologin"
-        android:layout_width="301dp"
-        android:layout_height="60dp"
-        android:layout_marginLeft="50dp"
-        android:layout_marginTop="320dp"
-        android:cursorVisible="true"
-        android:inputType="textPersonName"
-        android:hint="Correo Electronico"
 
-        android:background="@drawable/stylo_borde_editext"/>
 
 </RelativeLayout>

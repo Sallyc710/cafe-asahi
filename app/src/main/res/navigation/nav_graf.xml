@@ -28,6 +28,9 @@
         <action
             android:id="@+id/action_homeFragment_to_favoritosFragment"
             app:destination="@id/favoritosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/compraFragment"
@@ -103,4 +106,9 @@
             android:id="@+id/action_detalleFragment_to_producFragment"
             app:destination="@id/producFragment" />
     </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.example.cafeasahi.view.ui.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
 </navigation>

@@ -23,10 +23,17 @@ class RegistroActivity : AppCompatActivity() {
         buttonregistro=findViewById(R.id.registar)
         val correo=findViewById<EditText>(R.id.correoregistro)
         val contrasena=findViewById<EditText>(R.id.contrasenaregistro)
+
         buttonregistro.setOnClickListener {
-            crearcuenta(correo.text.toString(),contrasena.text.toString())
+
+                crearcuenta(correo.text.toString(), contrasena.text.toString())
+
         }
     }
+
+
+
+
 
     private fun crearcuenta(correo:String, contrasena: String){
         firebaseAuth.createUserWithEmailAndPassword(correo, contrasena)
@@ -38,6 +45,7 @@ class RegistroActivity : AppCompatActivity() {
                     Toast.makeText(baseContext,"Error Creacion",Toast.LENGTH_SHORT).show()
                 }
             }
+
     }
 
 }

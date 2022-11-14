@@ -34,7 +34,9 @@ class LoginActivity : AppCompatActivity() {
         val contrasena=findViewById<EditText>(R.id.contrasenalogin)
 
         iniciobutton.setOnClickListener{
-            login(correo.text.toString(),contrasena.text.toString())
+            if (ValidarText()) {
+                login(correo.text.toString(), contrasena.text.toString())
+            }
         }
 
         registrobutton.setOnClickListener {
@@ -46,6 +48,23 @@ class LoginActivity : AppCompatActivity() {
             startActivity(Intent(this, RecuperarActivity::class.java))
         }
     }
+
+
+    private fun ValidarText():Boolean {
+        var isValid = true
+        val correo=findViewById<EditText>(R.id.correologin)
+        val contrasena=findViewById<EditText>(R.id.contrasenalogin)
+        if(correo.text.toString().isBlank() ) {
+            isValid=false
+            correo.error="campo requerido"
+        }else if(contrasena.text.toString().isBlank()){
+            isValid=false
+            contrasena.error="campo requerido"
+        }
+        return isValid
+    }
+
+
 
     private fun login(correo:String, contrasena:String){
         firebaseAuth.signInWithEmailAndPassword(correo,contrasena)
