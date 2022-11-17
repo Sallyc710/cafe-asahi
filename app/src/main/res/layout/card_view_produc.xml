@@ -51,5 +51,33 @@
             android:id="@+id/precio">
         </TextView>
 
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Presentacion"
+            android:textColor="@color/colorletra"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:layout_below="@id/precio"
+            android:textSize="20dp"
+            android:id="@+id/presentacion">
+        </TextView>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cantidad"
+            android:textColor="@color/colorletra"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:layout_below="@id/presentacion"
+            android:textSize="20dp"
+            android:id="@+id/cantidad">
+        </TextView>
+
     </RelativeLayout>
 </androidx.cardview.widget.CardView>

@@ -16,7 +16,8 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginTop="20dp"
         android:textSize="20dp"
-        android:textStyle="bold"/>
+        android:textStyle="bold"
+        android:text="TITULO"/>
 
     <ImageView
         android:id="@+id/imaDetalle"
@@ -35,7 +36,22 @@
         android:layout_marginTop="320dp"
         android:text="https://docs.google.com/spreadsheets/u/0/d/1oU9woWlF5rRrKlHBk19C0ilRBf4I9zJ9xO7P09aTzh8/htmlview"
         android:textSize="16dp" />
-
+    <TextView
+        android:id="@+id/textPrecio"
+        android:layout_width="324dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="420dp"
+        android:text="Precio"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/textCantidad"
+        android:layout_width="324dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="470dp"
+        android:text="Cantidad"
+        android:textSize="16dp" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"

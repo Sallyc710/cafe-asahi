@@ -42,8 +42,8 @@ class ProducFragment : Fragment() {
         adapter.setOnItemClickListener(object:ProducAdapter.onItemClickListener{
             override fun onItemClick(position: Int) {
 
+                    findNavController().navigate(R.id.action_producFragment_to_detalleFragment)
 
-                     findNavController().navigate(R.id.action_producFragment_to_detalleFragment)
 
             }
         })

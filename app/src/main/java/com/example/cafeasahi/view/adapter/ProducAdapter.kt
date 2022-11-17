@@ -1,19 +1,22 @@
 package com.example.cafeasahi.view.adapter
 
 import android.content.Context
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
-
 import com.example.cafeasahi.R
+import com.example.cafeasahi.model.Products
 import com.example.cafeasahi.model.cafes
+import com.example.cafeasahi.view.ui.fragments.DetalleFragment
 import com.squareup.picasso.Picasso
 
 class ProducAdapter(private val context : Context):RecyclerView.Adapter<ProducAdapter.ViewHolder>() {
     private var cafelista=mutableListOf<cafes>()
+    lateinit var pros:Products
 
     fun setListData(data:MutableList<cafes>){
         cafelista=data
@@ -35,25 +38,18 @@ class ProducAdapter(private val context : Context):RecyclerView.Adapter<ProducAd
   }
 
 
-    inner class ViewHolder(ItemView: View, listener: onItemClickListener): RecyclerView.ViewHolder(ItemView){
+    inner class ViewHolder(ItemView: View, listener: onItemClickListener ): RecyclerView.ViewHolder(ItemView){
         fun binWew(cafe: cafes){
             itemView.findViewById<TextView>(R.id.title).text =cafe.titulo
             itemView.findViewById<TextView>(R.id.precio).text=cafe.precio
             Picasso.with(context).load(cafe.image).into(itemView.findViewById<ImageView>(R.id.image))
 
-        }
-        fun binWew2(cafe: cafes){
-            itemView.findViewById<TextView>(R.id.tituloDetalle).text =cafe.titulo
-            itemView.findViewById<TextView>(R.id.precio).text=cafe.precio
-            Picasso.with(context).load(cafe.image).into(itemView.findViewById<ImageView>(R.id.imaDetalle))
+
 
         }
 
-        init {
-             itemView.setOnClickListener {
-                listener.onItemClick(adapterPosition)
-            }
-        }
+
+
     }
 
 

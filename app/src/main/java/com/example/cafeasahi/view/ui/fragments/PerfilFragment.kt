@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
+import android.widget.TextView
 import androidx.navigation.fragment.findNavController
 import com.example.cafeasahi.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
@@ -23,6 +24,36 @@ class PerfilFragment : Fragment() {
     ): View? {
         val view= inflater.inflate(R.layout.fragment_perfil, container, false)
         val btmcamara=view.findViewById<Button>(R.id.btmcamara)
+        val pernombre=view.findViewById<TextView>(R.id.pernombre)
+        val perdireccion=view.findViewById<TextView>(R.id.perdireccion)
+        val pertelefono=view.findViewById<TextView>(R.id.pertelefono)
+        val percedula=view.findViewById<TextView>(R.id.percedula)
+        val bteditar=view.findViewById<Button>(R.id.bteditar)
+        val btactualizar=view.findViewById<Button>(R.id.btmactualizar)
+
+        pernombre.isEnabled=false
+        perdireccion.isEnabled=false
+        pertelefono.isEnabled=false
+        percedula.isEnabled=false
+
+
+        bteditar.setOnClickListener {
+            if(pernombre.isEnabled==false){
+                pernombre.isEnabled=true
+                perdireccion.isEnabled=true
+                pertelefono.isEnabled=true
+                percedula.isEnabled=true
+            }else if (pernombre.isEnabled==true){
+                pernombre.isEnabled=false
+                perdireccion.isEnabled=false
+                pertelefono.isEnabled=false
+                percedula.isEnabled=false
+            }
+        }
+
+
+        btactualizar.setOnClickListener {  }
+
         btmcamara.setOnClickListener {
             val intent= Intent(MediaStore.ACTION_IMAGE_CAPTURE)
             startActivityForResult(intent, 123)
@@ -34,8 +65,11 @@ class PerfilFragment : Fragment() {
             intent.type="image/*"
             startActivityForResult(intent,456)
         }
+
+
         return view
     }
+
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
         super.onActivityResult(requestCode, resultCode, data)
@@ -47,6 +81,8 @@ class PerfilFragment : Fragment() {
             imageView?.setImageURI(data?.data)
         }
     }
+
+
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

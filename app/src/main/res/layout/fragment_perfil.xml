@@ -15,6 +15,7 @@
     </ImageView>
 
     <ImageView
+        android:id="@+id/editfoto"
         android:layout_width="117dp"
         android:layout_height="81dp"
         android:layout_marginLeft="220dp"
@@ -46,69 +47,67 @@
     </Button>
 
     <EditText
-        android:id="@+id/editTextTextPersonName7"
+        android:id="@+id/pernombre"
         android:layout_width="340dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Nombre:"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="300dp"/>
+        android:layout_marginTop="300dp"
+
+        />
     <EditText
-        android:id="@+id/editTextTextPersonName8"
+        android:id="@+id/perdireccion"
         android:layout_width="340dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Dirección:"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="350dp"/>
+        android:layout_marginTop="350dp"
+        />
     <EditText
-        android:id="@+id/editTextTextPersonName9"
+        android:id="@+id/pertelefono"
         android:layout_width="340dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Teléfono:"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="400dp"/>
+        android:layout_marginTop="400dp"
+        />
     <EditText
-        android:id="@+id/editTextTextPersonName10"
+        android:id="@+id/percedula"
         android:layout_width="340dp"
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
         android:text="Cedula:"
         android:layout_marginLeft="40dp"
-        android:layout_marginTop="450dp"/>
-    <EditText
-        android:id="@+id/editTextTextPersonName11"
-        android:layout_width="340dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Clave Actual:"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="500dp"/>
-    <EditText
-        android:id="@+id/editTextTextPersonName12"
-        android:layout_width="340dp"
-        android:layout_height="40dp"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="Nueva Clave:"
-        android:layout_marginLeft="40dp"
-        android:layout_marginTop="550dp"/>
+        android:layout_marginTop="450dp"
+        />
+
     <Button
         android:id="@+id/btmactualizar"
         android:layout_width="150dp"
         android:layout_height="60dp"
-        android:layout_marginLeft="140dp"
+        android:layout_marginLeft="220dp"
         android:layout_marginTop="600dp"
 
         android:text="Actualizar"
-        android:textStyle="bold"
-        >
+        android:textStyle="bold">
+    </Button>
+
+    <Button
+        android:id="@+id/bteditar"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="600dp"
+        android:visibility="visible"
+        android:text="Editar"
+        android:textStyle="bold">
     </Button>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
