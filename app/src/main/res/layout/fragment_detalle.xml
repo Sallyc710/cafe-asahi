@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".view.ui.fragments.DetalleFragment"
+    android:background="@drawable/theme_gradients_background">
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:id="@+id/tituloDetalle"
+        android:layout_width="250dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="TITULO"/>
+
+    <ImageView
+        android:id="@+id/imaDetalle"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_marginLeft="75dp"
+        android:layout_marginTop="50dp"
+        android:src="@drawable/bahareque"
+         />
+
+    <TextView
+        android:id="@+id/textDetalle"
+        android:layout_width="324dp"
+        android:layout_height="106dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="320dp"
+        android:text="https://docs.google.com/spreadsheets/u/0/d/1oU9woWlF5rRrKlHBk19C0ilRBf4I9zJ9xO7P09aTzh8/htmlview"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/textPrecio"
+        android:layout_width="324dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="420dp"
+        android:text="Precio"
+        android:textSize="16dp" />
+    <TextView
+        android:id="@+id/textCantidad"
+        android:layout_width="324dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="470dp"
+        android:text="Cantidad"
+        android:textSize="16dp" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttonnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_gravity="bottom"
+        android:background="#00FFFFFF"
+        app:menu="@menu/menu_nav_bar2">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
+</FrameLayout>

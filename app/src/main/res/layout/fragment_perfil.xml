@@ -3,12 +3,121 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ui.fragments.PerfilFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <ImageView
+        android:id="@+id/fotoper"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="200dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/profil">
+    </ImageView>
+
+    <ImageView
+        android:id="@+id/editfoto"
+        android:layout_width="117dp"
+        android:layout_height="81dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="130dp"
+        android:src="@drawable/editprof">
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btmcamara"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="220dp"
+        android:text="Camara"
+        android:textStyle="bold"
+        >
+    </Button>
+
+    <Button
+        android:id="@+id/btmgalery"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="230dp"
+        android:layout_marginTop="220dp"
+        android:text="Galeria"
+        android:textStyle="bold"
+        >
+    </Button>
+
+    <EditText
+        android:id="@+id/pernombre"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Nombre:"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="300dp"
+
+        />
+    <EditText
+        android:id="@+id/perdireccion"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Dirección:"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="350dp"
+        />
+    <EditText
+        android:id="@+id/pertelefono"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Teléfono:"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="400dp"
+        />
+    <EditText
+        android:id="@+id/percedula"
+        android:layout_width="340dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="Cedula:"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="450dp"
+        />
+
+    <Button
+        android:id="@+id/btmactualizar"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="220dp"
+        android:layout_marginTop="600dp"
+
+        android:text="Actualizar"
+        android:textStyle="bold">
+    </Button>
+
+    <Button
+        android:id="@+id/bteditar"
+        android:layout_width="150dp"
+        android:layout_height="60dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="600dp"
+        android:visibility="visible"
+        android:text="Editar"
+        android:textStyle="bold">
+    </Button>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttonnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/colorfondo"
+        app:menu="@menu/menu_nav_bar2">
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 </FrameLayout>
