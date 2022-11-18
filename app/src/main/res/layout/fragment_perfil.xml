@@ -52,7 +52,7 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Nombre:"
+        android:hint="Nombre:"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="300dp"
 
@@ -63,7 +63,7 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Dirección:"
+        android:hint="Dirección:"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="350dp"
         />
@@ -73,7 +73,7 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Teléfono:"
+        android:hint="Teléfono:"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="400dp"
         />
@@ -83,7 +83,7 @@
         android:layout_height="40dp"
         android:ems="10"
         android:inputType="textPersonName"
-        android:text="Cedula:"
+        android:hint="Cédula:"
         android:layout_marginLeft="40dp"
         android:layout_marginTop="450dp"
         />

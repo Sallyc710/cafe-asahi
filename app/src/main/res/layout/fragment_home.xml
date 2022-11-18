@@ -157,8 +157,8 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/fav200x200"
-                            android:id="@+id/cardFavo">
+                            android:src="@drawable/mapa"
+                            android:id="@+id/cardMapa">
                         </ImageView>
                         <TextView
                             android:layout_width="match_parent"
@@ -167,7 +167,7 @@
                             android:textSize="18sp"
                             android:textStyle="bold"
                             android:textAlignment="center"
-                            android:text="Favoritos">
+                            android:text="Mapa">
                         </TextView>
 
                     </LinearLayout>
