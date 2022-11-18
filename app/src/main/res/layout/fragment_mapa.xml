@@ -17,6 +17,13 @@
         android:textColor="@color/colorsecundario"
         android:textStyle="bold" />
 
+    <fragment
+        android:id="@+id/map_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:name="com.google.android.gms.maps.SupportMapFragment">
+    </fragment>
+
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"
