@@ -1,4 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/home"
+        android:title="Menú"
+        android:icon="@drawable/home"
+        >
+    </item>
+
+    <item
+        android:id="@+id/perfil"
+        android:title="Perfil usuario"
+        android:icon="@drawable/perfil"
+        >
+    </item>
+    <item
+        android:id="@+id/cafes"
+        android:title="Cafes"
+        android:icon="@drawable/caffe2"
+        >
+    </item>
+
+    <item
+        android:id="@+id/deseos"
+        android:title="Preferidos"
+        android:icon="@drawable/deseos"
+        >
+    </item>
+
+    <item
+        android:id="@+id/compras"
+        android:title="Carro de compras"
+        android:icon="@drawable/carritocompras"
+        >
+    </item>
+
+    <item
+        android:id="@+id/Map"
+        android:title="Mapa"
+        android:icon="@drawable/map_24"
+        >
+    </item>
+
+    <item
+        android:id="@+id/ayuda"
+        android:title="Ayuda"
+        android:icon="@drawable/ayuda"
+        >
+    </item>
+
+    <item
+        android:id="@+id/cerrar"
+        android:title="Cerrar"
+        android:icon="@drawable/cerrar_sesion"
+        >
+    </item>
+
 
 </menu>

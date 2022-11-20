@@ -1,10 +1,8 @@
 package com.example.cafeasahi.view.ui.fragments
 
 import android.os.Bundle
+import android.view.*
 import androidx.fragment.app.Fragment
-import android.view.LayoutInflater
-import android.view.View
-import android.view.ViewGroup
 import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
@@ -16,9 +14,11 @@ import androidx.lifecycle.ViewModelProvider
 import com.example.cafeasahi.model.cafes
 import com.example.cafeasahi.viewmodel.CafeViewModel
 import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
-
+@Suppress("DEPRECATION")
 class ProducFragment : Fragment() {
     lateinit  var recyclerLib:RecyclerView
     lateinit  var firebaseAuth: FirebaseAuth
@@ -36,6 +36,7 @@ class ProducFragment : Fragment() {
         adapter=ProducAdapter(requireContext())
         recyclerLib.layoutManager=LinearLayoutManager(context)
         recyclerLib.adapter=adapter
+        firebaseAuth= Firebase.auth
 
         observeData()
 
@@ -58,9 +59,51 @@ class ProducFragment : Fragment() {
         })
     }
 
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_navigation_toolbar, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
 
+    override fun onOptionsItemSelected(item: MenuItem):Boolean {
+        return when(item.itemId){
+            R.id.home->{
+                findNavController().navigate(R.id.action_producFragment_to_homeFragment)
+                true
+            }
+            R.id.perfil->{
+                findNavController().navigate(R.id.action_producFragment_to_perfilFragment)
+                true
+            }
+            R.id.Map->{
+                findNavController().navigate(R.id.action_producFragment_to_mapaFragment)
+                true
+            }
+            R.id.deseos->{
+                findNavController().navigate(R.id.action_producFragment_to_favoritosFragment)
+                true
+            }
+            R.id.compras->{
+                findNavController().navigate(R.id.action_producFragment_to_compraFragment)
+                true
+            }
+            R.id.ayuda->{
+                findNavController().navigate(R.id.action_producFragment_to_ayudaFragment)
+                true
+            }
 
+            R.id.cerrar->{
+                firebaseAuth.signOut()
+                findNavController().navigate(R.id.action_producFragment_to_loginActivity)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
 
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
+    }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)

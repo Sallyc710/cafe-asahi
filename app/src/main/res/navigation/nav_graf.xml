@@ -52,6 +52,12 @@
         <action
             android:id="@+id/action_compraFragment_to_ayudaFragment"
             app:destination="@id/ayudaFragment" />
+        <action
+            android:id="@+id/action_compraFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_compraFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/producFragment"
@@ -76,6 +82,12 @@
         <action
             android:id="@+id/action_producFragment_to_detalleFragment"
             app:destination="@id/detalleFragment" />
+        <action
+            android:id="@+id/action_producFragment_to_ayudaFragment"
+            app:destination="@id/ayudaFragment" />
+        <action
+            android:id="@+id/action_producFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
@@ -98,14 +110,42 @@
             android:id="@+id/action_perfilFragment_to_ayudaFragment"
             app:destination="@id/ayudaFragment" />
         <action
-            android:id="@+id/action_perfilFragment_to_producFragment2"
-            app:destination="@id/producFragment" />
+            android:id="@+id/action_perfilFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_perfilFragment_to_mapaFragment2"
+            app:destination="@id/mapaFragment" />
     </fragment>
     <fragment
         android:id="@+id/mapaFragment"
         android:name="com.example.cafeasahi.view.ui.fragments.MapaFragment"
         android:label="fragment_mapa"
-        tools:layout="@layout/fragment_mapa" />
+        tools:layout="@layout/fragment_mapa" >
+        <action
+            android:id="@+id/action_mapaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mapaFragment_to_ayudaFragment"
+            app:destination="@id/ayudaFragment" />
+        <action
+            android:id="@+id/action_mapaFragment_to_favoritosFragment"
+            app:destination="@id/favoritosFragment" />
+        <action
+            android:id="@+id/action_mapaFragment_to_compraFragment"
+            app:destination="@id/compraFragment" />
+        <action
+            android:id="@+id/action_mapaFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_mapaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_mapaFragment_to_producFragment"
+            app:destination="@id/producFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ayudaFragment"
         android:name="com.example.cafeasahi.view.ui.fragments.AyudaFragment"
@@ -126,6 +166,12 @@
         <action
             android:id="@+id/action_ayudaFragment_to_favoritosFragment"
             app:destination="@id/favoritosFragment" />
+        <action
+            android:id="@+id/action_ayudaFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_ayudaFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/favoritosFragment"
@@ -147,6 +193,12 @@
         <action
             android:id="@+id/action_favoritosFragment_to_mapaFragment"
             app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_favoritosFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_favoritosFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
     </fragment>
     <fragment
         android:id="@+id/detalleFragment"
@@ -171,6 +223,9 @@
         <action
             android:id="@+id/action_detalleFragment_to_ayudaFragment"
             app:destination="@id/ayudaFragment" />
+        <action
+            android:id="@+id/action_detalleFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
     </fragment>
     <activity
         android:id="@+id/loginActivity"

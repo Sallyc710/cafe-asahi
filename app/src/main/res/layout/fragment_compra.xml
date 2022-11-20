@@ -16,6 +16,7 @@
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/colorsecundario"
         android:textStyle="bold"/>
+
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"
         android:layout_width="match_parent"
