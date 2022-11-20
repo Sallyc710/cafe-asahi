@@ -40,7 +40,7 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Precio"
+            android:text="Presentacion"
             android:textColor="@color/colorletra"
             android:textStyle="bold"
             android:textAlignment="center"
@@ -48,8 +48,36 @@
             android:layout_toRightOf="@id/image"
             android:layout_below="@id/title"
             android:textSize="20dp"
-            android:id="@+id/precio">
+            android:id="@+id/presenta">
         </TextView>
 
+        <TextView
+            android:id="@+id/precio"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/presenta"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:text="Precio"
+            android:textAlignment="center"
+            android:textColor="@color/colorletra"
+            android:textSize="20dp"
+            android:textStyle="bold">
+            </TextView>
+
+        <TextView
+            android:id="@+id/canti"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/precio"
+            android:layout_toEndOf="@id/image"
+            android:layout_toRightOf="@id/image"
+            android:text="Cantidad"
+            android:textAlignment="center"
+            android:textColor="@color/colorletra"
+            android:textSize="20dp"
+            android:textStyle="bold">
+
+        </TextView>
     </RelativeLayout>
 </androidx.cardview.widget.CardView>
