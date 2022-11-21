@@ -31,6 +31,9 @@
         <action
             android:id="@+id/action_homeFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_homeFragment_to_comprasFragment2"
+            app:destination="@id/comprasFragment2" />
     </fragment>
     <fragment
         android:id="@+id/compraFragment"
@@ -88,6 +91,9 @@
         <action
             android:id="@+id/action_producFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_producFragment_to_comprasFragment2"
+            app:destination="@id/comprasFragment2" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
@@ -199,6 +205,9 @@
         <action
             android:id="@+id/action_favoritosFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_favoritosFragment_to_comprasFragment2"
+            app:destination="@id/comprasFragment2" />
     </fragment>
     <fragment
         android:id="@+id/detalleFragment"
@@ -232,4 +241,13 @@
         android:name="com.example.cafeasahi.view.ui.activities.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/comprasFragment2"
+        android:name="com.example.cafeasahi.view.ui.fragments.ComprasFragment"
+        android:label="fragment_compras"
+        tools:layout="@layout/fragment_compras" >
+        <action
+            android:id="@+id/action_comprasFragment2_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>
