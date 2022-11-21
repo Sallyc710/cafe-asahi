@@ -127,7 +127,7 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
             }
 
             R.id.compras->{
-                findNavController().navigate(R.id.action_mapaFragment_to_compraFragment)
+                findNavController().navigate(R.id.action_mapaFragment_to_comprasFragment)
                 true
             }
             R.id.cafes->{
@@ -155,7 +155,7 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
         btn.setOnNavigationItemReselectedListener {
             when(it.itemId){
                 R.id.home -> findNavController().navigate(R.id.action_mapaFragment_to_homeFragment)
-                R.id.carrito -> findNavController().navigate(R.id.action_mapaFragment_to_compraFragment)
+                R.id.carrito -> findNavController().navigate(R.id.action_mapaFragment_to_comprasFragment)
                 R.id.product -> findNavController().navigate(R.id.action_mapaFragment_to_producFragment)
                 R.id.help2 -> findNavController().navigate(R.id.action_mapaFragment_to_ayudaFragment)
             }

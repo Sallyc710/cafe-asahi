@@ -82,7 +82,7 @@ class ProducFragment : Fragment(), OnBookItemClickListener {
             }
 
             R.id.compras->{
-                findNavController().navigate(R.id.action_producFragment_to_compraFragment)
+                findNavController().navigate(R.id.action_producFragment_to_comprasFragment)
                 true
             }
             R.id.ayuda->{
@@ -111,7 +111,7 @@ class ProducFragment : Fragment(), OnBookItemClickListener {
         btn.setOnNavigationItemReselectedListener {
             when(it.itemId){
                 R.id.home -> findNavController().navigate(R.id.action_producFragment_to_homeFragment)
-                R.id.carrito -> findNavController().navigate(R.id.action_producFragment_to_compraFragment)
+                R.id.carrito -> findNavController().navigate(R.id.action_producFragment_to_comprasFragment)
                 R.id.help2 -> findNavController().navigate(R.id.action_producFragment_to_ayudaFragment)
                 R.id.mapa -> findNavController().navigate(R.id.action_producFragment_to_mapaFragment)
             }

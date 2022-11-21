@@ -30,7 +30,7 @@ class DetalleFragment : Fragment() {
 		btn.setOnNavigationItemReselectedListener {
 			when(it.itemId){
 				R.id.home -> findNavController().navigate(R.id.action_detalleFragment_to_homeFragment)
-				R.id.carrito -> findNavController().navigate(R.id.action_detalleFragment_to_compraFragment)
+				R.id.carrito -> findNavController().navigate(R.id.action_detalleFragment_to_comprasFragment)
 				R.id.product -> findNavController().navigate(R.id.action_detalleFragment_to_producFragment)
 				R.id.help2 -> findNavController().navigate(R.id.action_detalleFragment_to_ayudaFragment)
 				R.id.mapa -> findNavController().navigate(R.id.action_detalleFragment_to_mapaFragment)

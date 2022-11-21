@@ -11,9 +11,6 @@
         android:label="fragment_home"
         tools:layout="@layout/fragment_home" >
         <action
-            android:id="@+id/action_homeFragment_to_compraFragment"
-            app:destination="@id/compraFragment" />
-        <action
             android:id="@+id/action_homeFragment_to_producFragment"
             app:destination="@id/producFragment" />
         <action
@@ -31,33 +28,9 @@
         <action
             android:id="@+id/action_homeFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
-    </fragment>
-    <fragment
-        android:id="@+id/compraFragment"
-        android:name="com.example.cafeasahi.view.ui.fragments.CompraFragment"
-        android:label="fragment_compra"
-        tools:layout="@layout/fragment_compra" >
         <action
-            android:id="@+id/action_compraFragment_to_perfilFragment"
-            app:destination="@id/perfilFragment" />
-        <action
-            android:id="@+id/action_compraFragment_to_homeFragment"
-            app:destination="@id/homeFragment" />
-        <action
-            android:id="@+id/action_compraFragment_to_favoritosFragment"
-            app:destination="@id/favoritosFragment" />
-        <action
-            android:id="@+id/action_compraFragment_to_producFragment"
-            app:destination="@id/producFragment" />
-        <action
-            android:id="@+id/action_compraFragment_to_ayudaFragment"
-            app:destination="@id/ayudaFragment" />
-        <action
-            android:id="@+id/action_compraFragment_to_mapaFragment"
-            app:destination="@id/mapaFragment" />
-        <action
-            android:id="@+id/action_compraFragment_to_loginActivity"
-            app:destination="@id/loginActivity" />
+            android:id="@+id/action_homeFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <fragment
         android:id="@+id/producFragment"
@@ -74,9 +47,6 @@
             android:id="@+id/action_producFragment_to_perfilFragment"
             app:destination="@id/perfilFragment" />
         <action
-            android:id="@+id/action_producFragment_to_compraFragment"
-            app:destination="@id/compraFragment" />
-        <action
             android:id="@+id/action_producFragment_to_favoritosFragment"
             app:destination="@id/favoritosFragment" />
         <action
@@ -88,6 +58,9 @@
         <action
             android:id="@+id/action_producFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_producFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
@@ -104,9 +77,6 @@
             android:id="@+id/action_perfilFragment_to_producFragment"
             app:destination="@id/producFragment" />
         <action
-            android:id="@+id/action_perfilFragment_to_compraFragment"
-            app:destination="@id/compraFragment" />
-        <action
             android:id="@+id/action_perfilFragment_to_ayudaFragment"
             app:destination="@id/ayudaFragment" />
         <action
@@ -118,6 +88,9 @@
         <action
             android:id="@+id/action_perfilFragment_to_mapaFragment2"
             app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <fragment
         android:id="@+id/mapaFragment"
@@ -134,9 +107,6 @@
             android:id="@+id/action_mapaFragment_to_favoritosFragment"
             app:destination="@id/favoritosFragment" />
         <action
-            android:id="@+id/action_mapaFragment_to_compraFragment"
-            app:destination="@id/compraFragment" />
-        <action
             android:id="@+id/action_mapaFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
         <action
@@ -145,6 +115,9 @@
         <action
             android:id="@+id/action_mapaFragment_to_producFragment"
             app:destination="@id/producFragment" />
+        <action
+            android:id="@+id/action_mapaFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <fragment
         android:id="@+id/ayudaFragment"
@@ -158,9 +131,6 @@
             android:id="@+id/action_ayudaFragment_to_producFragment"
             app:destination="@id/producFragment" />
         <action
-            android:id="@+id/action_ayudaFragment_to_compraFragment"
-            app:destination="@id/compraFragment" />
-        <action
             android:id="@+id/action_ayudaFragment_to_perfilFragment"
             app:destination="@id/perfilFragment" />
         <action
@@ -172,6 +142,9 @@
         <action
             android:id="@+id/action_ayudaFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_ayudaFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <fragment
         android:id="@+id/favoritosFragment"
@@ -185,9 +158,6 @@
             android:id="@+id/action_favoritosFragment_to_ayudaFragment"
             app:destination="@id/ayudaFragment" />
         <action
-            android:id="@+id/action_favoritosFragment_to_compraFragment"
-            app:destination="@id/compraFragment" />
-        <action
             android:id="@+id/action_favoritosFragment_to_producFragment"
             app:destination="@id/producFragment" />
         <action
@@ -199,6 +169,9 @@
         <action
             android:id="@+id/action_favoritosFragment_to_loginActivity"
             app:destination="@id/loginActivity" />
+        <action
+            android:id="@+id/action_favoritosFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <fragment
         android:id="@+id/detalleFragment"
@@ -212,9 +185,6 @@
             android:id="@+id/action_detalleFragment_to_homeFragment"
             app:destination="@id/homeFragment" />
         <action
-            android:id="@+id/action_detalleFragment_to_compraFragment"
-            app:destination="@id/compraFragment" />
-        <action
             android:id="@+id/action_detalleFragment_to_perfilFragment"
             app:destination="@id/perfilFragment" />
         <action
@@ -226,10 +196,37 @@
         <action
             android:id="@+id/action_detalleFragment_to_mapaFragment"
             app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_detalleFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
     </fragment>
     <activity
         android:id="@+id/loginActivity"
         android:name="com.example.cafeasahi.view.ui.activities.LoginActivity"
         android:label="activity_login"
         tools:layout="@layout/activity_login" />
+    <fragment
+        android:id="@+id/comprasFragment"
+        android:name="com.example.cafeasahi.view.ui.fragments.ComprasFragment"
+        android:label="fragment_compras"
+        tools:layout="@layout/fragment_compras" >
+        <action
+            android:id="@+id/action_comprasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_ayudaFragment"
+            app:destination="@id/ayudaFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_producFragment"
+            app:destination="@id/producFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
 </navigation>

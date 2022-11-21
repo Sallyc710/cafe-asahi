@@ -21,7 +21,7 @@ class FavoritosFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        val view=inflater.inflate(R.layout.fragment_deseos, container, false)
+        val view=inflater.inflate(R.layout.fragment_favoritos, container, false)
         firebaseAuth= Firebase.auth
         return view
     }
@@ -50,7 +50,7 @@ class FavoritosFragment : Fragment() {
                 true
             }
             R.id.compras->{
-                findNavController().navigate(R.id.action_favoritosFragment_to_compraFragment)
+                findNavController().navigate(R.id.action_favoritosFragment_to_comprasFragment)
                 true
             }
             R.id.cafes->{
