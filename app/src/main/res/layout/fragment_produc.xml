@@ -36,7 +36,7 @@
         android:layout_height="wrap_content"
         android:layout_gravity="bottom"
         android:background="@color/colorfondo"
-        app:menu="@menu/menu_nav_bar">
+        app:menu="@menu/menu_nav_bar2">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
 
