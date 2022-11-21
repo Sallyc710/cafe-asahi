@@ -8,9 +8,9 @@ import com.example.cafeasahi.repositorio.repo
 
 class CafeViewModel: ViewModel() {
     val repo=repo()
-    fun librarydata(): LiveData<MutableList<cafes>> {
+    fun Comprasdata(): LiveData<MutableList<cafes>> {
         val mutabledata=MutableLiveData<MutableList<cafes>>()
-        repo.getlibraryData().observeForever {result->
+        repo.getComprasData().observeForever {result->
             mutabledata.value= result
         }
         return mutabledata

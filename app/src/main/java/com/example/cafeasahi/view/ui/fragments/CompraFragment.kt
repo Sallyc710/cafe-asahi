@@ -10,7 +10,7 @@ import com.example.cafeasahi.R
 import com.google.android.material.bottomnavigation.BottomNavigationView
 
 
-class CompraFragment : Fragment() {
+class CompraFragment : Fragment()  {
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,

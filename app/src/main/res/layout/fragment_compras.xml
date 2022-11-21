@@ -5,10 +5,57 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.fragments.ComprasFragment">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="99dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="35dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/theme_gradients_background">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/caffel2">
+        </ImageView>
+    </RelativeLayout>
+
     <!-- TODO: Update blank fragment layout -->
     <TextView
+        android:id="@+id/preciototal"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:background="@color/teal_700"
+        android:layout_marginTop="160dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="40dp">
+
+    </TextView>
+    <TextView
+        android:id="@+id/realizar"
+        android:layout_width="208dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="200dp"
+        android:background="@color/colorsecundario"
+        android:layout_marginTop="160dp"
+        android:text="Compra"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="40dp">
+
+    </TextView>
+
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerviewcompra"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="518dp"
+        android:layout_marginTop="230dp"
+        >
+
+    </androidx.recyclerview.widget.RecyclerView>
 
 </FrameLayout>
