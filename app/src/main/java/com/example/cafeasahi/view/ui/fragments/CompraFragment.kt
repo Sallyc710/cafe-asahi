@@ -44,10 +44,7 @@ class CompraFragment : Fragment() {
                 findNavController().navigate(R.id.action_compraFragment_to_mapaFragment)
                 true
             }
-            R.id.deseos->{
-                findNavController().navigate(R.id.action_compraFragment_to_favoritosFragment)
-                true
-            }
+
             R.id.perfil->{
                 findNavController().navigate(R.id.action_compraFragment_to_perfilFragment)
                 true

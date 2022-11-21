@@ -12,10 +12,21 @@
         android:layout_width="match_parent"
         android:layout_height="39dp"
         android:gravity="center"
-        android:text="CONTACTO"
+        android:text="PREGUNTAS FRECUENTES"
         android:textAppearance="@style/TextAppearance.AppCompat.Large"
         android:textColor="@color/colorsecundario"
         android:textStyle="bold" />
+
+
+    <TextView
+        android:layout_width="392dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="59dp"
+        android:layout_marginLeft="10dp"
+        android:gravity="left"
+        android:text="Cuando te pones en contacto con nuestro equipo de servicio al cliente a través de nuestro email contacto@cafeasahi.com, te contactas con una persona real. Esa persona contestará a tus solicitudes lo más pronto posible."
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textColor="@color/colorletra" />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"
@@ -26,4 +37,5 @@
         app:menu="@menu/menu_nav_bar2">
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 </FrameLayout>

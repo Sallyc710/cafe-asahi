@@ -124,10 +124,7 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
                 findNavController().navigate(R.id.action_mapaFragment_to_perfilFragment)
                 true
             }
-            R.id.deseos->{
-                findNavController().navigate(R.id.action_mapaFragment_to_favoritosFragment)
-                true
-            }
+
             R.id.compras->{
                 findNavController().navigate(R.id.action_mapaFragment_to_compraFragment)
                 true

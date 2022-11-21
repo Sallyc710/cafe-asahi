@@ -78,10 +78,7 @@ class ProducFragment : Fragment() {
                 findNavController().navigate(R.id.action_producFragment_to_mapaFragment)
                 true
             }
-            R.id.deseos->{
-                findNavController().navigate(R.id.action_producFragment_to_favoritosFragment)
-                true
-            }
+
             R.id.compras->{
                 findNavController().navigate(R.id.action_producFragment_to_compraFragment)
                 true
