@@ -18,6 +18,7 @@ import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
 import com.google.firebase.ktx.Firebase
@@ -145,5 +146,19 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setHasOptionsMenu(true)
+    }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val btn =view.findViewById<BottomNavigationView>(R.id.buttonnavigation)
+        btn.setOnNavigationItemReselectedListener {
+            when(it.itemId){
+                R.id.home -> findNavController().navigate(R.id.action_mapaFragment_to_homeFragment)
+                R.id.carrito -> findNavController().navigate(R.id.action_mapaFragment_to_compraFragment)
+                R.id.product -> findNavController().navigate(R.id.action_mapaFragment_to_producFragment)
+                R.id.help2 -> findNavController().navigate(R.id.action_mapaFragment_to_ayudaFragment)
+            }
+        }
     }
 }
