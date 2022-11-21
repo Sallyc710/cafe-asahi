@@ -58,8 +58,8 @@ class HomeFragment : Fragment() {
             findNavController().navigate(R.id.action_homeFragment_to_ayudaFragment)
         }
 
-        val cardMap = view.findViewById<ImageView>(R.id.cardMapa)
-        cardMap.setOnClickListener {
+        val cardMapa = view.findViewById<ImageView>(R.id.cardMapa)
+        cardMapa.setOnClickListener {
             findNavController().navigate(R.id.action_homeFragment_to_mapaFragment)
         }
 
@@ -68,6 +68,10 @@ class HomeFragment : Fragment() {
             firebaseAuth.signOut()
             findNavController().navigate(R.id.action_homeFragment_to_loginActivity)
             true
+        }
+        val cardCompra=view.findViewById<ImageView>(R.id.cardCarro)
+        cardCompra.setOnClickListener {
+            findNavController().navigate(R.id.action_homeFragment_to_compraFragment)
         }
 
     }
