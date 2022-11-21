@@ -38,6 +38,7 @@ class ProducAdapter(private val context: Context):RecyclerView.Adapter<ProducAda
         fun binWew(cafes: Cafes){
             itemView.findViewById<TextView>(R.id.title).text=cafes.titulo
             itemView.findViewById<TextView>(R.id.precio).text=cafes.precio
+            itemView.findViewById<TextView>(R.id.presenta).text=cafes.detalle
             Picasso.with(context).load(cafes.image).into(itemView.findViewById<ImageView>(R.id.image))
         }
 
