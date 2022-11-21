@@ -76,9 +76,8 @@ class AyudaFragment : Fragment() {
             when(it.itemId){
                 R.id.home -> findNavController().navigate(R.id.action_ayudaFragment_to_homeFragment)
                 R.id.carrito -> findNavController().navigate(R.id.action_ayudaFragment_to_compraFragment)
-
                 R.id.product -> findNavController().navigate(R.id.action_ayudaFragment_to_producFragment)
-
+                R.id.mapa -> findNavController().navigate(R.id.action_ayudaFragment_to_mapaFragment)
             }
         }
     }
