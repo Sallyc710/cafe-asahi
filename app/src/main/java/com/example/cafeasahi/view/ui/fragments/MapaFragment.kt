@@ -13,13 +13,19 @@ import com.example.cafeasahi.R
 import android.widget.Toast
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
+import androidx.navigation.fragment.findNavController
 import com.google.android.gms.maps.GoogleMap
 import com.google.android.gms.maps.OnMapReadyCallback
 import com.google.android.gms.maps.SupportMapFragment
 import com.google.android.gms.maps.model.MarkerOptions
+import com.google.firebase.auth.FirebaseAuth
+import com.google.firebase.auth.ktx.auth
+import com.google.firebase.ktx.Firebase
 
 
+@Suppress("DEPRECATION")
 class MapaFragment : Fragment(), OnMapReadyCallback {
+    lateinit var firebaseAuth: FirebaseAuth
     private lateinit var googleMap: GoogleMap
 
     override fun onCreateView(
@@ -27,6 +33,7 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
         savedInstanceState: Bundle?
     ): View? {
         val view = inflater.inflate(R.layout.fragment_mapa, container, false)
+        firebaseAuth= Firebase.auth
         val mapFragment =
             this.childFragmentManager.findFragmentById(R.id.map_view) as SupportMapFragment
         mapFragment.getMapAsync(this)
@@ -96,5 +103,50 @@ class MapaFragment : Fragment(), OnMapReadyCallback {
             }
             else -> {}
         }
+    }
+
+    override fun onCreateOptionsMenu(menu: Menu, inflater: MenuInflater) {
+        inflater.inflate(R.menu.menu_navigation_toolbar, menu)
+        super.onCreateOptionsMenu(menu, inflater)
+    }
+
+    override fun onOptionsItemSelected(item: MenuItem):Boolean {
+        return when(item.itemId){
+            R.id.home->{
+                findNavController().navigate(R.id.action_mapaFragment_to_homeFragment)
+                true
+            }
+            R.id.ayuda->{
+                findNavController().navigate(R.id.action_mapaFragment_to_ayudaFragment)
+                true
+            }
+            R.id.perfil->{
+                findNavController().navigate(R.id.action_mapaFragment_to_perfilFragment)
+                true
+            }
+            R.id.deseos->{
+                findNavController().navigate(R.id.action_mapaFragment_to_favoritosFragment)
+                true
+            }
+            R.id.compras->{
+                findNavController().navigate(R.id.action_mapaFragment_to_compraFragment)
+                true
+            }
+            R.id.cafes->{
+                findNavController().navigate(R.id.action_mapaFragment_to_producFragment)
+                true
+            }
+            R.id.cerrar->{
+                firebaseAuth.signOut()
+                findNavController().navigate(R.id.action_mapaFragment_to_loginActivity)
+                true
+            }
+            else -> super.onOptionsItemSelected(item)
+        }
+    }
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        setHasOptionsMenu(true)
     }
 }
