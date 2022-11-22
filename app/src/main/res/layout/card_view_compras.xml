@@ -84,8 +84,8 @@
             android:id="@+id/eliminar"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@+id/title"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="270dp"
             android:src="@drawable/ic_baseline_delete_24"
             android:background="@color/rojo">
         </ImageButton>

@@ -4,13 +4,13 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import com.example.cafeasahi.model.compras
-import com.example.cafeasahi.repositorio.repocompras
+import com.example.cafeasahi.repositorio.repo
 
 class ComprasViewModel:ViewModel(){
-    val repocompras=repocompras()
-    fun fetchComprasData():LiveData<MutableList<compras>>{
+    val repo= repo()
+    fun fetchCompraData():LiveData<MutableList<compras>>{
         val mutableData=MutableLiveData<MutableList<compras>>()
-        repocompras.getComprasData().observeForever{
+        repo.getCompraData().observeForever{
             mutableData.value=it
         }
         return mutableData

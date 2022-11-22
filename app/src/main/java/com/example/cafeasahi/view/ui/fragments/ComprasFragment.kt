@@ -1,5 +1,6 @@
 package com.example.cafeasahi.view.ui.fragments
 
+
 import android.app.AlertDialog
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -41,14 +42,14 @@ class ComprasFragment : Fragment(), OnCompraItemClickListener{
         recyclerView.adapter=adapter
         observeData()
         preciototal()
-       compraT.setOnClickListener {
-           realizarcompra()
-       }
+        compraT.setOnClickListener {
+            realizarcompra()
+        }
         return view
     }
 
     private fun observeData() {
-        viewModel.fetchComprasData().observe(viewLifecycleOwner, Observer {
+        viewModel.fetchCompraData().observe(viewLifecycleOwner, Observer {
             adapter.setListData(it)
             adapter.notifyDataSetChanged()
         })
@@ -57,7 +58,7 @@ class ComprasFragment : Fragment(), OnCompraItemClickListener{
         database.collection("compras")
             .get()
             .addOnSuccessListener {
-                result->
+                    result->
                 val preciounitario= mutableListOf<String>()
                 for (document in result){
                     val precio=document["precio"].toString()
@@ -72,7 +73,7 @@ class ComprasFragment : Fragment(), OnCompraItemClickListener{
         builder.setTitle("compracafeasahi")
         builder.setMessage("¿Desea realizar esta compra?")
         builder.setPositiveButton("Aceptar"){
-            dialog,which->
+                dialog,which->
             findNavController().navigate(R.id.action_compraFragment_to_homeFragment)
         }
         builder.setNegativeButton("Cancelar", null)
