@@ -78,14 +78,28 @@
             android:textSize="20dp"
             android:id="@+id/cantidad">
         </TextView>
+
         <ImageButton
             android:id="@+id/carrito"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:layout_marginLeft="30dp"
-            android:layout_toRightOf="@+id/title"
-            android:src="@drawable/ic_baseline_shopping_cart_24"
-            android:background="@color/coloracento">
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="270dp"
+            android:background="@color/coloracento"
+            android:src="@drawable/ic_baseline_shopping_cart_24">
+
+        </ImageButton>
+
+        <ImageButton
+            android:id="@+id/favorito"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="60dp"
+            android:layout_marginLeft="270dp"
+
+            android:background="@color/coloracento"
+            android:src="@drawable/ic_baseline_favorite_24">
+
         </ImageButton>
 
     </RelativeLayout>

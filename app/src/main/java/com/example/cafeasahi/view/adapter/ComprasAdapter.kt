@@ -9,16 +9,14 @@ import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
 import com.example.cafeasahi.R
-import com.example.cafeasahi.model.Products
 import com.example.cafeasahi.model.compras
 import com.squareup.picasso.Picasso
 
-class ComprasAdapter (private val context : Context, var clickListener:OnCompraItemClickListener):
-    RecyclerView.Adapter<ComprasAdapter.ViewHolder>() {
+class ComprasAdapter(private val context : Context,var clickListener:OnCompraItemClickListener):RecyclerView.Adapter<ComprasAdapter.ViewHolder>() {
     private var cafelista=mutableListOf<compras>()
-    lateinit var pros: Products
 
-    fun setListData(data: MutableList<compras>){
+
+    fun setListData(data:MutableList<compras>){
         cafelista=data
     }
 
@@ -27,18 +25,15 @@ class ComprasAdapter (private val context : Context, var clickListener:OnCompraI
         fun onItemClick(position: Int)
     }
 
-    fun setOnItemClickListener(listener: onItemClickListener){
-        mListener = listener
-    }
+
 
     override fun onCreateViewHolder(viewGroup: ViewGroup, i: Int):ViewHolder{
-        val v= LayoutInflater.from(viewGroup.context).inflate(
-            R.layout.card_view_compras,
+        val v=LayoutInflater.from(viewGroup.context).inflate(R.layout.card_view_compras,
             viewGroup, false)
-        return ViewHolder(v, mListener)
+        return ViewHolder(v)
     }
 
-    inner class ViewHolder(ItemView: View, listener: onItemClickListener ): RecyclerView.ViewHolder(ItemView){
+    inner class ViewHolder(ItemView: View): RecyclerView.ViewHolder(ItemView){
         fun binWew(cafe: compras, action:OnCompraItemClickListener){
             itemView.findViewById<TextView>(R.id.title).text =cafe.titulo
             itemView.findViewById<TextView>(R.id.precio).text=cafe.precio
@@ -64,6 +59,5 @@ class ComprasAdapter (private val context : Context, var clickListener:OnCompraI
     }
 }
 interface OnCompraItemClickListener{
-    fun onItemclick(cafe:compras, position: Int)
-
+    fun onItemclick(cafe:compras,position: Int)
 }

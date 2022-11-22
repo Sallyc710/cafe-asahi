@@ -1,5 +1,6 @@
 package com.example.cafeasahi.view.ui.fragments
 
+
 import android.app.AlertDialog
 import android.os.Bundle
 import android.view.*
@@ -46,14 +47,14 @@ class ComprasFragment : Fragment(), OnCompraItemClickListener{
         recyclerView.adapter=adapter
         observeData()
         preciototal()
-       compraT.setOnClickListener {
-           realizarcompra()
-       }
+        compraT.setOnClickListener {
+            realizarcompra()
+        }
         return view
     }
 
     private fun observeData() {
-        viewModel.fetchComprasData().observe(viewLifecycleOwner, Observer {
+        viewModel.fetchCompraData().observe(viewLifecycleOwner, Observer {
             adapter.setListData(it)
             adapter.notifyDataSetChanged()
         })
@@ -62,7 +63,7 @@ class ComprasFragment : Fragment(), OnCompraItemClickListener{
         database.collection("compras")
             .get()
             .addOnSuccessListener {
-                result->
+                    result->
                 val preciounitario= mutableListOf<String>()
                 for (document in result){
                     val precio=document["precio"].toString()
